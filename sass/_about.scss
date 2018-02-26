@@ -1,0 +1,95 @@
+///////about
+#about{
+    .welcome{
+        padding: 94px 0px 99px 0px;
+        h1{
+            font-size: 36px;
+            line-height: 48px;
+            color: #1a1e1a;
+            font-weight: 500;
+            margin-bottom: 29px;
+        }
+        span{
+            background: -webkit-linear-gradient(top left, #11998e, #38ef7d);
+    background: -moz-linear-gradient(top left, #11998e, #38ef7d);
+    background: -o-linear-gradient(top left, #11998e, #38ef7d);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    font-weight: 600;
+        }
+        p{
+            font-weight: 400;
+    letter-spacing: 0.03px;
+    margin-bottom: 27px;
+    line-height: 28px;
+        }
+        .textcenter{
+            text-align: center;
+          }
+        .medal{
+           margin-bottom: 25px; 
+ul{
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    li{
+        position: relative;
+        float: left;
+        width: 33.33%;
+        background-color: #393939;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        height: 201px;
+        display:inline-block;
+
+        .title{
+            padding: 35px 0px 33px 0px;
+        }
+        i{
+            font-size: 55px;
+            line-height: normal;
+            color: #2bd383;
+           }
+           h6{
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 500;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.25px;
+           }
+    }
+
+}
+.overlay{
+    position: absolute;
+    opacity: 0.9;
+    text-align: center;
+    padding-top: 60px;
+    background-color: #ffffff;
+    .title{
+        font-size: 15px;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+      }
+  }
+  
+
+}
+    }
+
+
+
+
+
+}
+.imaget{
+    position: relative;
+}

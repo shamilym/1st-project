@@ -1,0 +1,119 @@
+#portfolio{
+    .portfolio{
+        padding: 118px 0px 70px 0px;
+        border-bottom: none;
+        .portfolio-filter{
+            border-bottom: 1px solid #f2f2f2;
+            margin: 0px 0px 47px 41px;
+        }
+        ul{
+            float: left;
+            padding:0;
+            margin: 0;
+        }
+        li{
+            display: inline-block;
+        position: relative;
+        margin: 0px 39px 0px 0px;
+        line-height: 25px;
+        }
+        a{
+            color:lighten($second-color,50%);
+            @include setTransition(all,0.3s,ease-in-out);
+        }
+        a:hover{
+            color:$btn-color;
+            @include setTransition(all,0.3s,ease-in-out);
+        }
+    }
+    .thumb{
+        background: linear-gradient(45deg, rgba(17, 153, 142, 0.7), rgba(56, 239, 125, 0.7));
+    }
+    .thumb:hover img {
+        background: #2bd383;
+        opacity: 0.5;
+    }
+
+    .thumb .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 62px;
+        height: 62px;
+        line-height: 62px;
+        text-align: center;
+        margin: -31px 0px 0px -31px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        @include setTransform(scale(1.5));
+    }
+
+    .thumb .overlay i {
+        font-size: 60px;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .thumb:hover .overlay {
+        opacity: 1;
+        visibility: visible;
+        @include setTransform(scale(1));
+    }
+    .content{
+        margin-bottom: 9px;
+        a{
+            font-size: 22px;
+        color:$second-color;
+        @include setTransition(all,0.3s,ease-in-out);
+        }
+        a:hover{
+            color:$btn-color;
+            @include setTransition(all,0.3s,ease-in-out);
+        }
+        li{
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            color:lighten($second-color,50%);
+            a{
+                font-size: 14px; 
+                padding-right: 11px;
+            }
+            
+        }
+        li::after{
+            content: "/";
+            font-size: 14px;
+            line-height: 22px;
+            color: #737373;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        li:last-child::after {
+            content: "";
+        }
+    }
+    .pagination{
+        margin-bottom: 50px;
+        li{
+            margin-left: 10px;
+            a{
+                color:$second-color;
+                @include setTransition(all,0.5s,ease-in-out);
+            }
+        }
+        li:hover a{
+            color:$btn-color;
+            @include setTransition(all,0.5s,ease-in-out);
+            background: none;
+        }
+        .active{
+            color:$btn-color;
+        }
+
+    }
+}
+
